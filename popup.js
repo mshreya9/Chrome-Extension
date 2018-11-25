@@ -19,20 +19,24 @@
             document.getElementById('general').style.display = 'block';
             var d = new Date();
             var time = d.getHours();
-            if(time < 4){
+            if(time < 4) {
                 $('#greet').text('Good night');
             }
             else if (time > 4 && time < 12) {
                 $('#greet').text('Good morning');
+
             }
             else if (time < 17) {
                 $('#greet').text('Good afternoon');
+
             }
             else if (time < 20) {
                 $('#greet').text('Good evening');
+
             }
             else if (time < 24) {
                 $('#greet').text('Good night');
+
             }
             $('#placeholder_name').text(data.placeholder_name);
             $('button').hover(
@@ -52,18 +56,26 @@
                     var time = d.getHours();
                     if(time < 4){
                         $('#greet').text('Good night');
+
                     }
                     else if (time > 4 && time < 12) {
                         $('#greet').text('Good morning');
+
+
                     }
                     else if (time < 17) {
                         $('#greet').text('Good afternoon');
+
+
                     }
                     else if (time < 20) {
                         $('#greet').text('Good evening');
+
                     }
                     else if (time < 24) {
                         $('#greet').text('Good night');
+
+
                     }
                     $('#placeholder_name').text(name);
                 });

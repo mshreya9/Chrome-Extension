@@ -34,7 +34,11 @@
             else if (time < 24) {
                 $('#greet').text('Good night');
             }
-            $('#placeholder_name').text(data.placeholder_name)
+            $('#placeholder_name').text(data.placeholder_name);
+            $('button').hover(
+                function(){ $(this).addClass('animated infinite pulse') },
+                function(){ $(this).removeClass('animated infinite pulse') }
+            )
         }
         else {
             document.getElementById('general').style.display = 'none';

@@ -1,11 +1,10 @@
 body {
-    height: 100px;
-    width: 250px;
+    text-align: center;
+    height: 150px;
+    width: 350px;
     /*background: #EFF0F1;*/
     /*overflow-x: hidden;*/
 }
-
-
 
 #name {
     outline-width: 0;
@@ -29,6 +28,7 @@ body {
     font-size: 18px;
 }
 
+
 img {
     height: 40px;
     width: 40px;
@@ -39,3 +39,28 @@ img {
     margin-top: 10px;
 }
 
+ button{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
+    /*background:#00417F; !*#004e92;*!*/
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#content1, #content2{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
+    /*background:#00417F; !*#004e92;*!*/
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px;
+}

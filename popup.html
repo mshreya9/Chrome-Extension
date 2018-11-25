@@ -4,6 +4,7 @@
     <script src="jquery.js"></script>
     <script src="popup.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
     <meta charset="UTF-8">
     <title>Test Extension</title>
 </head>
@@ -12,22 +13,24 @@
     <h2>Welcome</h2><br>
     <span style="font-size: 14px;">Share your name to serve you better</span>
     <input type="text" id="name">
-    <button id="save">Save</button>
+    <input type="button" id="save" value="Save"><span style="color: black;">Save</span>
 </div>
 <div id="general">
     <span id="greet"> </span>, <span id="placeholder_name"></span>
-    <hr>
-    <div id="content">
-        
-        <a href="https://www.facebook.com/" target="_blank"><img style="width: 37px; height: 37px;" src="facebook.png" ></a>
-        <a href="https://www.instagram.com/"  target="_blank"><img style="margin-right: 20px; margin-left: 20px; height: 35px; width: 35px;" src="instagram.png" ></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="linkedin.png" ></a>
+    <div id="content1">
+
+        <button  onclass="animated infinite pulse"><a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" ></a></button>
+        <button><a href="https://www.instagram.com/"  target="_blank"><img  src="instagram.png" ></a></button>
+        <button><a  href="https://www.gmail.com/" target="_blank"><img src="gmail.png"></a></button>
+    </div>
+    <div id="content2">
         <br>
-        <a href="https://www.youtube.com/"  target="_blank"><img src="youtube.png" ></a>
-        <a href="https://pinterest.com/" target="_blank"><img style="margin-right: 20px; margin-left: 20px;" src="pinterest.png" ></a>
-        <a href="https://gmail.com"  target="_blank"><img src="add.png"></a>
+        <button><a href="https://web.whatsapp.com/"  target="_blank"><img  src="whatsapp.png" ></a></button>
+        <button><a href="https://pinterest.com/" target="_blank"><img   src="pinterest.png" ></a></button>
+        <button><a href="https://www.linkedin.com" target="_blank"><img  src="linkedin.png" ></a></button>
     </div>
 </div>
+
 
 
 </body>

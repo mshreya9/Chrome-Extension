@@ -86,6 +86,8 @@
 
 
 
+
+
 /*
 
 chrome.storage.sync.set({'placeholder_name' : placeholder_name} , () => {

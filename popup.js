@@ -9,7 +9,7 @@
     // Go to the extension -> right click -> Inspect  popup and run the following script in the console
 
     // Ways to access object from the callback
-    // chrome.storage.sync.get('placeholder_name', (data) => {   // or thsi can be function() { ------- content of the function goes here }
+    // chrome.storage.sync.get('placeholder_name', (data) => {   // or thsi can be function() { ------- $('#greet')ent of the function goes here }
     //     alert(data.placeholder_name);
     // });
 
@@ -17,6 +17,23 @@
         if (data.placeholder_name) {
             document.getElementById('welcome').style.display = 'none';
             document.getElementById('general').style.display = 'block';
+            var d = new Date();
+            var time = d.getHours();
+            if(time < 4){
+                $('#greet').text('Good night');
+            }
+            else if (time > 4 && time < 12) {
+                $('#greet').text('Good morning');
+            }
+            else if (time < 17) {
+                $('#greet').text('Good afternoon');
+            }
+            else if (time < 20) {
+                $('#greet').text('Good evening');
+            }
+            else if (time < 24) {
+                $('#greet').text('Good night');
+            }
             $('#placeholder_name').text(data.placeholder_name)
         }
         else {
@@ -27,12 +44,31 @@
                 chrome.storage.sync.set({'placeholder_name': name}, function () {
                     document.getElementById('welcome').style.display = 'none';
                     document.getElementById('general').style.display = 'block';
+                    var d = new Date();
+                    var time = d.getHours();
+                    if(time < 4){
+                        $('#greet').text('Good night');
+                    }
+                    else if (time > 4 && time < 12) {
+                        $('#greet').text('Good morning');
+                    }
+                    else if (time < 17) {
+                        $('#greet').text('Good afternoon');
+                    }
+                    else if (time < 20) {
+                        $('#greet').text('Good evening');
+                    }
+                    else if (time < 24) {
+                        $('#greet').text('Good night');
+                    }
                     $('#placeholder_name').text(name);
                 });
             });
         }
 
     });
+
+
 
 /*
 

@@ -26,11 +26,16 @@ body {
 }
 
 #general {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 img {
     height: 40px;
     width: 40px;
+    padding: 10px;
+}
+
+#content {
+    margin-top: 10px;
 }
 

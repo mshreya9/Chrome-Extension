@@ -1,0 +1,30 @@
+body {
+    height: 100px;
+    width: 250px;
+    /*background: #EFF0F1;*/
+    /*overflow-x: hidden;*/
+}
+
+
+
+#name {
+    outline-width: 0;
+    border-color: black;
+    border-radius : 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 4px;
+}
+
+#save{
+    border-color: black;
+    border-radius : 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding : 3px 5px 3px 5px;
+}
+
+#general {
+    font-size: 20px;
+}

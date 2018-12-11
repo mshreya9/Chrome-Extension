@@ -25,7 +25,7 @@
             }
             else if (time > 4 && time < 12) {
                 $('#greet').text('Good morning');
-                $('body').css({background : "linear-gradient(120deg, #f6d365 0%, #fda085 100%)"});
+                $('body').css({background: "linear-gradient(120deg, #f6d365 0%, #fda085 100%)"});
 
             }
             else if (time < 17) {
@@ -49,7 +49,8 @@
             $('button').hover(
                 function(){ $(this).addClass('animated infinite pulse') },
                 function(){ $(this).removeClass('animated infinite pulse') }
-            )
+            );
+
         }
         else {
             document.getElementById('general').style.display = 'none';

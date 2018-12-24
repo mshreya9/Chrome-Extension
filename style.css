@@ -2,7 +2,7 @@
      font-family: 'Roboto', sans-serif;
     text-align: center;
     height: 200px;
-    width: 350px;
+    width: 400px;
      background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
      background-blend-mode: screen;
 
@@ -48,7 +48,7 @@ img {
 
 #content {
     margin-top: 10px;
-    opacity: 1 !important;
+
 }
 
 

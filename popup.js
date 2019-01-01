@@ -23,19 +23,19 @@
                 $('#greet').text('Good night');
                 $('body').css({background : "linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)", backgroundSize: "cover", height: "100%" });
             }
-            else if (time > 4 && time < 12) {
+            else if (time >= 4 && time < 12) {
                 $('#greet').text('Good morning');
                 $('body').css({background: "linear-gradient(120deg, #f6d365 0%, #fda085 100%)", backgroundSize: "cover", height: "100%"},
                     );
 
             }
-            else if (time < 17) {
+            else if (time >=12 && time < 17) {
                 $('#greet').text('Good afternoon');
                 $('body').css({background :"linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)", backgroundSize: "cover", height: "100%"});
 
 
             }
-            else if (time < 21) {
+            else if (time >= 17 && time < 21) {
                 $('#greet').text('Good evening');
                 $('body').css({background :"#f3e7e9", backgroundSize: "cover", height: "100%"});
 
@@ -66,17 +66,17 @@
                         $('#greet').text('Good night');
                         $('body').css({background : "linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)", backgroundSize: "cover", height: "100%"});
                     }
-                    else if (time > 4 && time < 12) {
+                    else if (time >= 4 && time < 12) {
                         $('#greet').text('Good morning');
                         $('body').css({background : "linear-gradient(120deg, #f6d365 0%, #fda085 100%)", backgroundSize: "cover", height: "100%"});
 
                     }
-                    else if (time < 17) {
+                    else if (time >=12 && time < 17) {
                         $('#greet').text('Good afternoon');
                         $('body').css({background : "linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)" , backgroundSize: "cover", height: "100%"});
 
                     }
-                    else if (time < 21) {
+                    else if (time >= 17 && time < 21) {
                         $('#greet').text('Good evening');
                         $('body').css({background : "linear-gradient(to right, #fa709a 0%, #fee140 100%)", backgroundSize: "cover", height: "100%"});
                     }
